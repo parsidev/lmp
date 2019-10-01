@@ -51,7 +51,7 @@ This package can be used in Laravel 5.2 and up.
 You can install the package via composer:
 
 ``` bash
-composer require parsidev/laravel-permission-mongodb
+composer require parsidev/lmp
 ```
 
 In Laravel 6.0 the service provider will automatically get registered. In older versions of the framework just add the service provider in `config/app.php` file:
