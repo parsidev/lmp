@@ -1,0 +1,50 @@
+{
+    "name": "parsidev/lmp",
+    "description": "Permission handling for Laravel 6.0 and up using mongodb",
+    "keywords": ["laravel","security","mongodb","permission","acl", "jenssegers"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohammad Reza Parsaeian",
+            "email": "programmer.net2009@live.com",
+            "homepage": "https://github.com/parsidev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "illuminate/auth": "^6.0.0",
+        "illuminate/container": "^6.0.0",
+        "illuminate/contracts": "^6.0.0",
+        "jenssegers/mongodb": "^3.6"
+    },
+    "require-dev": {
+        "codeclimate/php-test-reporter": "^0.4.4",
+        "monolog/monolog": "^1.23",
+        "orchestra/testbench": "^3.2.0",
+        "phpunit/phpunit": "^5.7|^6.0|^7.0",
+        "squizlabs/php_codesniffer": "^3.1",
+        "codacy/coverage": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Parsidev\\Permission\\": "src"
+        }
+    },
+    "autoload-dev": {},
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs --standard=psr2 src/",
+        "fix-style": "phpcbf --standard=psr2 src/"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Parsidev\\Permission\\PermissionServiceProvider"
+            ]
+        }
+    }
+}
