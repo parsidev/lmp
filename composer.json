@@ -13,9 +13,9 @@
     ],
     "require": {
         "php": ">=7.2",
-        "illuminate/auth": "^6.0.0",
-        "illuminate/container": "^6.0.0",
-        "illuminate/contracts": "^6.0.0",
+        "illuminate/auth": "6.*",
+        "illuminate/container": "6.*",
+        "illuminate/contracts": "6.*",
         "jenssegers/mongodb": "^3.6"
     },
     "require-dev": {
